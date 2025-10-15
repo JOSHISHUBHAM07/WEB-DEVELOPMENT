@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar 3</title>
+    <style>
+      .nav3 {
+        background-color: lightgreen;
+        padding: 10px;
+      }
+      .nav3 ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+      }
+      .nav3 a {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        display: block;
+      }
+      .nav3 .dropdown-content {
+        display: none;
+      }
+      .nav3 .dropdown:hover .dropdown-content {
+        display: block;
+        position: absolute;
+      }
+      .nav3 .dropdown-content a {
+        color: black;
+        padding: 10px;
+        display: block;
+      }
+
+      .nav3 .dropdown-content a:hover {
+        background-color: lightgray;
+        font-size: 1.05em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav3">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li class="dropdown">
+          <a href="">About</a>
+          <div class="dropdown-content">
+            <a href="">About Us</a>
+            <a href="">About</a>
+            <a href="">Us</a>
+          </div>
+        </li>
+        <li><a href="">Product</a></li>
+        <button>Login</button>
+      </ul>
+    </div>
+  </body>
+</html>
